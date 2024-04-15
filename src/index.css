@@ -31,5 +31,5 @@ body {
 * Gradient link: https://www.css-gradient.com/?c1=010101&c2=22032e&gt=r&gd=dbb
 */
   background: #010101;
-  background: radial-gradient(at center bottom, #010101, #22032e);
+  background: radial-gradient(at center bottom, #010101, #022d37);
 }

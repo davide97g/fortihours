@@ -14,12 +14,12 @@ export const Header = () => {
   return (
     <Navbar position="static" className="w-full rounded-md bg-background">
       <NavbarBrand>
-        <p className="font-bold text-inherit">BITROCK SKILLS</p>
+        <p className="font-bold text-inherit">FORTIHOURS</p>
         <img src="/img/logo/logo.png" alt="logo" height="30" width="30" />
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        <NavbarItem isActive={activePage === "skills"}>
-          <Link href="/skills">Skills</Link>
+        <NavbarItem isActive={activePage === "hours"}>
+          <Link href="/skills">Hours</Link>
         </NavbarItem>
         <NavbarItem isActive={activePage === "people"}>
           <Link href="/people" aria-current="page">

@@ -1,6 +1,5 @@
 import { Header } from "./components/Header";
 import { PeopleList } from "./components/PeopleList";
-import { RadarChart } from "./components/RadarChart";
 
 function App() {
   return (
@@ -8,7 +7,6 @@ function App() {
       <Header />
       <div className="flex flex-row justify-between gap-10">
         <PeopleList />
-        <RadarChart width={600} />
       </div>
     </div>
   );
