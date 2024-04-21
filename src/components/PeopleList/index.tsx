@@ -7,7 +7,6 @@ export const PeopleList = () => {
       className="flex gap-4 p-4 flex-col items-start justify-items-start bg-background rounded-md w-full"
       style={{
         borderRadius: "10px",
-        background: "#022d37",
       }}
     >
       <h3>People</h3>

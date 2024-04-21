@@ -18,16 +18,8 @@ export const Header = () => {
         <img src="/img/logo/logo.png" alt="logo" height="30" width="30" />
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        <NavbarItem isActive={activePage === "hours"}>
-          <Link href="/skills">Hours</Link>
-        </NavbarItem>
-        <NavbarItem isActive={activePage === "people"}>
-          <Link href="/people" aria-current="page">
-            People
-          </Link>
-        </NavbarItem>
-        <NavbarItem isActive={activePage === "projects"}>
-          <Link href="/projects">Projects</Link>
+        <NavbarItem isActive={activePage === "calendar"}>
+          <Link href="/calendar">Calendar</Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
