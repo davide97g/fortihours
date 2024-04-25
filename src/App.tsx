@@ -1,15 +1,8 @@
-import { lazy } from "react";
-
-const Home = lazy(() => import("./pages/Home"));
-const Header = lazy(() => import("./components/Header"));
+import { RouterProvider } from "react-router-dom";
+import { router } from "./router";
 
 function App() {
-  return (
-    <div className="flex gap-6 w-full flex-col p-4 ">
-      <Header />
-      <Home />
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

@@ -7,6 +7,7 @@ import {
   NavbarContent,
   NavbarItem,
 } from "@nextui-org/react";
+import { Auth } from "../api/auth";
 
 export default function Header() {
   const activePage = window.location.pathname.replace("/", "");
@@ -23,12 +24,9 @@ export default function Header() {
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
-        </NavbarItem>
         <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
-            Sign Up
+          <Button as={Link} color="primary" onClick={Auth.login} variant="flat">
+            Login
           </Button>
         </NavbarItem>
         <NavbarItem>
