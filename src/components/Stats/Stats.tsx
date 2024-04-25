@@ -14,7 +14,7 @@ export function Stats() {
       className="border-none bg-background/60 dark:bg-default-100/50"
       shadow="sm"
       style={{
-        width: "30rem",
+        width: "20rem",
       }}
     >
       <CardHeader className="flex gap-3">

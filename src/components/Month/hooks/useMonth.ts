@@ -1,4 +1,4 @@
-export const useCalendar = ({
+export const useMonth = ({
   startDate,
   endDate,
 }: {

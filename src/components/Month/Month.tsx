@@ -1,11 +1,11 @@
 import { Card, CardBody, CardHeader, Divider } from "@nextui-org/react";
 import { Day } from "./Day";
-import { useCalendar } from "./hooks/useCalendar";
+import { useMonth } from "./hooks/useMonth";
 import { WeekHeader } from "./WeekHeader";
 import { useState } from "react";
 
-export function Calendar() {
-  const { records } = useCalendar({
+export function Month() {
+  const { records } = useMonth({
     startDate: "2024-04-01",
     endDate: "2024-04-30",
   });
@@ -16,14 +16,14 @@ export function Calendar() {
       className="border-none bg-background/60 dark:bg-default-100/50"
       shadow="sm"
       style={{
-        width: "calc(100% - 30rem)",
+        width: "calc(100% - 20rem)",
       }}
     >
       <CardHeader className="flex gap-3">
         <div className="flex flex-col">
-          <p className="text-md">Calendar</p>
+          <p className="text-md">Month</p>
           <p className="text-small text-default-500">
-            Visualize all your worked hours with a calendar view
+            Visualize all your worked hours with a Month view
           </p>
         </div>
       </CardHeader>
