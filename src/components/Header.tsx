@@ -8,7 +8,7 @@ import {
   NavbarItem,
 } from "@nextui-org/react";
 
-export const Header = () => {
+export default function Header() {
   const activePage = window.location.pathname.replace("/", "");
 
   return (
@@ -37,4 +37,4 @@ export const Header = () => {
       </NavbarContent>
     </Navbar>
   );
-};
+}

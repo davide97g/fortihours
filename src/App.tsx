@@ -1,5 +1,7 @@
-import { Header } from "./components/Header";
-import Home from "./pages/Home";
+import { lazy } from "react";
+
+const Home = lazy(() => import("./pages/Home"));
+const Header = lazy(() => import("./components/Header"));
 
 function App() {
   return (

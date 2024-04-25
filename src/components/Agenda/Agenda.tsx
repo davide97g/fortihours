@@ -1,6 +1,7 @@
-import { useState } from "react";
-import { Week } from "../Week";
-import { Month } from "../Month";
+import { lazy, useState } from "react";
+
+const Month = lazy(() => import("../Month"));
+const Week = lazy(() => import("../Week"));
 
 export function Agenda() {
   const [visualization] = useState<"MONTH" | "WEEK">("WEEK");
